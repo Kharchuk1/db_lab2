@@ -18,7 +18,7 @@ ORDER BY region_name, test.year;
 '''
 cur.execute(query)
 
-with open('result_2.csv', 'w', encoding='UTF-8') as f:
+with open('result_1.csv', 'w', encoding='UTF-8') as f:
     writer = csv.writer(f, lineterminator='\n')
     writer.writerow(['Регіон', 'Рік', 'Середній бал з математики'])
     for row in cur:
